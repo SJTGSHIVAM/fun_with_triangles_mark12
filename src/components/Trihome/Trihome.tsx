@@ -10,24 +10,24 @@ const Trihome = () => {
       </header>
       <div>
         <div className="smallcard">
-          <Link to="/area" className="grid-nav">
+          <Link to="/angles" className="grid-nav">
             Angles of Triangle?
           </Link>
         </div>
         <div className="smallcard">
-          <Link to="/hype" className="grid-nav">
+          <Link to="/area" className="grid-nav">
             Calculate Area
           </Link>
         </div>
       </div>
       <div>
         <div className="smallcard">
-          <Link to="/quiz" className="grid-nav">
+          <Link to="/hype" className="grid-nav">
             Check hypotenuse
           </Link>
         </div>
         <div className="smallcard">
-          <Link to="/angle" className="grid-nav">
+          <Link to="/quiz" className="grid-nav">
             Take a Quiz
           </Link>
         </div>
