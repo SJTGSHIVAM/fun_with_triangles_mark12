@@ -1,11 +1,9 @@
 import { useState } from "react";
 
-import "./TriHype.css";
-
-const TriHype = () => {
+export default () => {
   const [side1, setSide1] = useState<number>(NaN);
   const [side2, setSide2] = useState<number>(NaN);
-  // const [side3, setSide3] = useState<number>(NaN);
+  const [side3, setSide3] = useState<number>(NaN);
   const [valall, setValall] = useState(true);
   const [isCalcDone, setIsCalcDone] = useState(false);
   const invalidateSidele = (e: number): boolean =>
@@ -70,4 +68,3 @@ const TriHype = () => {
     </>
   );
 };
-export default TriHype;
