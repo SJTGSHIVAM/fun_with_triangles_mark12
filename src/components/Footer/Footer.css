@@ -1,0 +1,14 @@
+.footerLink {
+  color: #406dff;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: flex-end; */
+}
+footer {
+  background-color: aliceblue;
+}
+.legacyText {
+  text-align: center;
+}
