@@ -10,8 +10,8 @@ const methodList = [
 ];
 const data: { [key: string]: JSX.Element } = {
   "Base and height": <LbArea />,
-  "Three sides": <SideAngleArea />,
-  "Two sides and included angle": <ThreeSideArea />,
+  "Two sides and included angle": <SideAngleArea />,
+  "Three sides": <ThreeSideArea />,
 };
 
 export default () => {

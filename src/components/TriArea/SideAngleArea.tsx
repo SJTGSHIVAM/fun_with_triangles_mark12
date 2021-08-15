@@ -9,14 +9,13 @@ export default () => {
   const [isCalcDone, setIsCalcDone] = useState(false);
   const invalidateSidele = (e: number): boolean =>
     isNaN(e) || e < 0.000000000001;
-  const validateTriangle = (side1: number, side2: number, side3: number) =>
-    side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2;
+  const invalidateangle = (e: number): boolean => e > 179 || e < 1;
+  //?angle shoul not 180,360,0
   return (
     <>
-      2side
       <div className="bcard">
         <header className="head">
-          <h1>Enter the lengths of sides of right angle triangle</h1>
+          <h1>Enter the lengths of two sides and angle between them</h1>
         </header>
 
         <section className="input">
@@ -45,11 +44,11 @@ export default () => {
             />
           </label>
           <label>
-            <span className="label">Sidele 3</span>
+            <span className="label">Angle</span>
             <input
               type="number"
               value={side3}
-              placeholder={"Enter Sidele 3"}
+              placeholder={"Enter Angle"}
               onChange={(e) => {
                 setSide3(parseFloat(e.target.value));
                 setIsCalcDone(false);
@@ -63,12 +62,14 @@ export default () => {
                 invalidateSidele(side1) ||
                 invalidateSidele(side2) ||
                 invalidateSidele(side3) ||
-                !validateTriangle(side1, side2, side3)
+                invalidateangle(side3)
               ) {
                 setValall(false);
+                setValTri(false);
               } else {
                 setIsCalcDone(true);
                 setValall(true);
+                setValTri(true);
                 console.log(isCalcDone);
               }
             }}
@@ -80,14 +81,12 @@ export default () => {
           {valall && valTri
             ? isCalcDone &&
               "Area is equal to " +
-                Math.sqrt(
-                  ((side1 + side2 + side3) / 2) *
-                    ((side1 + side2 + side3) / 2 - side1) *
-                    ((side1 + side2 + side3) / 2 - side2) *
-                    ((side1 + side2 + side3) / 2 - side3)
+                (
+                  (side1 * side2 * Math.sin((side3 * Math.PI) / 180)) /
+                  2
                 ).toFixed(2) +
                 "."
-            : "Please enter values greater than 0 (only numbers are allowed in above fields and sum of two sides should be greater than third)"}
+            : "Please enter values greater than 0 (only numbers are allowed in above fields and angle should be between 1 and 179)"}
         </span>
       </div>
     </>
