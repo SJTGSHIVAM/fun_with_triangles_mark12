@@ -10,7 +10,7 @@ const Trihome = () => {
       </header>
       <div>
         <div className="smallcard">
-          <Link to="/angles" className="grid-nav">
+          <Link to="/angle" className="grid-nav">
             Angles of Triangle?
           </Link>
         </div>
