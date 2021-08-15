@@ -28,3 +28,18 @@ a {
   width: 100%;
   margin: auto;
 }
+
+.method-list {
+  display: flex;
+  justify-content: space-around;
+}
+.method-tile {
+  margin: 0.1rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  background-color: #0e1a4171;
+}
+.highlight {
+  background-color: #406dff;
+  color: #000000;
+}
