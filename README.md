@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a bundle of web apps combines can calculate the area of the triangle, check whether 3 lengths of side or 3 different angles can form a triangle or not, and contains a fun quiz to check your knowledge on triangles. Built using ReactJS.
+
+# Live Link :
+
+https://funwithtri.netlify.app
+
+# Salient features are:
+
+- Built using ReactJS
+- Made a quiz on triangles
+  - Random questions from existing questionbank
+  - Let user know his/her score
+- An app to calculate Hypotenuse of a right angled triangle
+- An app to calculate area of triangle
+- An app to check weather given angles can form a triangle or not
 
 ## Available Scripts
 

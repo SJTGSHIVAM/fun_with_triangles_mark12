@@ -1,21 +1,37 @@
 import "./About.css";
 const About = () => {
   return (
-    <div className="bcard mid-section main-sec">
+    <div className="bcard mid-section main-sec about">
       <header className="head">
         <h1>Fun with Triangles</h1>
       </header>
       <section className="about">
-        This is a simple app create using Typescript and ReactJS Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Beatae iste expedita
-        debitis perspiciatis! Quos, expedita numquam. Delectus, corporis natus
-        similique facere at minima, officia eum dolore tenetur est maxime quam
-        voluptates! Laborum itaque amet quod vero odit ea voluptates officia vel
-        voluptatem, fugiat ratione rem nihil labore odio nobis deleniti iste
-        facilis nam repudiandae. Facilis quod dolore ab deleniti, debitis esse
-        repudiandae obcaecati adipisci suscipit excepturi, nesciunt architecto
-        delectus voluptatum ipsa itaque explicabo ullam quae sapiente quam,
-        inventore reprehenderit ea?
+        <h1 id="description">Description</h1>
+        <p>
+          This is a bundle of web apps combines can calculate the area of the
+          triangle, check whether 3 lengths of side or 3 different angles can
+          form a triangle or not, and contains a fun quiz to check your
+          knowledge on triangles. Built using ReactJS.
+        </p>
+        <h1 id="live-link-">Github Link :</h1>
+        <p>
+          <a href="https://github.com/SJTGSHIVAM/fun_with_triangles_mark12">
+            https://github.com/SJTGSHIVAM/fun_with_triangles_mark12
+          </a>
+        </p>
+        <h1 id="salient-features-are-">Salient features are:</h1>
+        <ul>
+          <li>Built using ReactJS</li>
+          <li>Made a quiz on triangles </li>
+          <li>Random questions from existing questionbank</li>
+          <li>Let user know his/her score</li>
+
+          <li>An app to calculate Hypotenuse of a right angled triangle</li>
+          <li>An app to calculate area of triangle</li>
+          <li>
+            An app to check weather given angles can form a triangle or not
+          </li>
+        </ul>
       </section>
     </div>
   );
