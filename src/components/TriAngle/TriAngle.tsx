@@ -11,7 +11,7 @@ const TriAngle = () => {
     isNaN(e) || e < 0.000000000001;
 
   return (
-    <>
+    <div className="main-sec">
       <div className="bcard">
         <header className="head">
           <h1>
@@ -22,7 +22,7 @@ const TriAngle = () => {
 
         <section className="input">
           <label>
-            <span className="label">Angle 1</span>
+            <span className="label">Angle 1:</span>
             <input
               type="number"
               value={ang1}
@@ -34,7 +34,7 @@ const TriAngle = () => {
             />
           </label>
           <label>
-            <span className="label">Angle 2</span>
+            <span className="label">Angle 2:</span>
             <input
               type="number"
               value={ang2}
@@ -46,7 +46,7 @@ const TriAngle = () => {
             />
           </label>
           <label>
-            <span className="label">Angle 3</span>
+            <span className="label">Angle 3:</span>
             <input
               type="number"
               value={ang3}
@@ -57,26 +57,28 @@ const TriAngle = () => {
               }}
             />
           </label>
-
-          <button
-            onClick={() => {
-              if (
-                invalidateAngle(ang1) ||
-                invalidateAngle(ang2) ||
-                invalidateAngle(ang3)
-              ) {
-                setValall(false);
-              } else {
-                setIsCalcDone(true);
-                setValall(true);
-                console.log(isCalcDone);
-              }
-            }}
-          >
-            Check
-          </button>
         </section>
-        <span>
+
+        <button
+          className="checkBtn"
+          onClick={() => {
+            if (
+              invalidateAngle(ang1) ||
+              invalidateAngle(ang2) ||
+              invalidateAngle(ang3)
+            ) {
+              setValall(false);
+            } else {
+              setIsCalcDone(true);
+              setValall(true);
+              console.log(isCalcDone);
+            }
+          }}
+        >
+          Check
+        </button>
+
+        <span className="msg">
           {valall
             ? isCalcDone &&
               (ang1 + ang2 + ang3 == 180
@@ -85,7 +87,7 @@ const TriAngle = () => {
             : "Please enter values greater than 0 (only numbers are allowed in above fields)"}
         </span>
       </div>
-    </>
+    </div>
   );
 };
 export default TriAngle;

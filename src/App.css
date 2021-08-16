@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  background-image: url(./components/img/tri.png);
 }
 .mid-cover {
   height: 100%;
@@ -18,4 +19,9 @@ body {
 }
 .text-center {
   text-align: center;
+}
+
+.main-sec {
+  margin-top: auto;
+  margin-bottom: auto;
 }

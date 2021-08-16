@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 a {
   text-decoration: none;
 }
 .navbar {
-  background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,7 +25,8 @@ a {
 }
 
 .nav-logo {
-  color: #406dff;
+  color: black;
+  font-family: Poppins;
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
@@ -67,12 +69,12 @@ a {
 
 .nav-item:hover:after {
   width: 100%;
-  background: #406dff;
+  background: black;
 }
 
 .nav-item .active {
-  color: #406dff;
-  border: 1px solid #406dff;
+  color: black;
+  border: 1px solid black;
 }
 
 .nav-icon {
@@ -93,14 +95,14 @@ a {
   }
 
   .nav-menu.active {
-    background: #406dff;
+    background-color: white;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
   .nav-item .active {
-    color: #ffffff;
+    color: black;
     border: none;
   }
   .nav-links {
@@ -118,6 +120,6 @@ a {
     font-size: 1.8rem;
 
     cursor: pointer;
-    color: #406dff;
+    color: black;
   }
 }

@@ -13,12 +13,12 @@ export default () => {
     <>
       <div className="bcard">
         <header className="head">
-          <h1>Enter the height and base </h1>
+          <h2>Enter the height and base </h2>
         </header>
 
         <section className="input">
           <label>
-            <span className="label">height</span>
+            <span className="label">Height:</span>
             <input
               type="number"
               value={side1}
@@ -30,7 +30,7 @@ export default () => {
             />
           </label>
           <label>
-            <span className="label">Base</span>
+            <span className="label">Base:</span>
             <input
               type="number"
               value={side2}
@@ -41,22 +41,24 @@ export default () => {
               }}
             />
           </label>
-
-          <button
-            onClick={() => {
-              if (invalidateSidele(side1) || invalidateSidele(side2)) {
-                setValall(false);
-              } else {
-                setIsCalcDone(true);
-                setValall(true);
-                console.log(isCalcDone);
-              }
-            }}
-          >
-            Check
-          </button>
         </section>
-        <span>
+
+        <button
+          className="checkBtn"
+          onClick={() => {
+            if (invalidateSidele(side1) || invalidateSidele(side2)) {
+              setValall(false);
+            } else {
+              setIsCalcDone(true);
+              setValall(true);
+              console.log(isCalcDone);
+            }
+          }}
+        >
+          Check
+        </button>
+
+        <span className="msg">
           {valall
             ? isCalcDone &&
               "Area is equal to " + (0.5 * side1 * side2).toFixed(2) + "."

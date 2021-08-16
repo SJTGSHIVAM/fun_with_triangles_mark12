@@ -1,25 +1,44 @@
 * {
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .bcard {
-  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin: auto;
   border-radius: 10px;
   padding: 1rem;
-  -webkit-box-shadow: 5px 5px 13px 0px rgba(50, 50, 50, 0.39);
-  -moz-box-shadow: 5px 5px 13px 0px rgba(50, 50, 50, 0.39);
-  box-shadow: 5px 5px 13px 0px rgba(50, 50, 50, 0.39);
 }
+
+.head {
+  color: black;
+}
+
 .smallcard {
-  background-color: #f8f9fa;
+  background-color: #7ad1f3;
   margin: 1rem;
   border-radius: 10px;
-  padding: 3rem;
+  padding: 1rem;
   display: inline-block;
   text-align: center;
   box-shadow: 5px 5px 13px 0px rgba(50, 50, 50, 0.39);
+}
+
+.grid-nav {
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .homeTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

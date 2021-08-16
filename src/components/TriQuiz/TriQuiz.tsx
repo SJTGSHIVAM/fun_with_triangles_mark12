@@ -24,9 +24,8 @@ export default () => {
   const [score, setScore] = useState(0);
   const [arrlength, setArrlength] = useState(temparr.length);
   return (
-    <div className="mid-cover">
-      {score}
-      <div>
+    <div className="main-sec">
+      <div className="mid-cover">
         {arrlength > Qremaining && (
           <>
             {" "}
@@ -59,11 +58,12 @@ export default () => {
           })
         ) : (
           <>
-            <div>
-              your score is :{score}/{totalQ} a total of{" "}
+            <div className="msg">
+              your score is {score}/{totalQ} a total of{" "}
               {((score / totalQ) * 100).toFixed(2)}%
             </div>
             <button
+              className="checkBtn"
               onClick={() => {
                 console.log(arrlength);
                 temparr = [...qarray];

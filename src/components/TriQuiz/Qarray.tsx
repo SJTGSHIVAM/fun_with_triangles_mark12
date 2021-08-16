@@ -125,7 +125,7 @@ export default [
 
   {
     question:
-      " if a triangle has sides of 7cm,5cm,3cm what type of triangle is",
+      " If a triangle has sides of 7cm,5cm,3cm what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -137,7 +137,7 @@ export default [
   },
   {
     question:
-      " if a triangle has sides of 7cm,5cm,5cm what type of triangle is",
+      " If a triangle has sides of 7cm,5cm,5cm what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -149,7 +149,7 @@ export default [
   },
   {
     question:
-      " if a triangle has sides of 5cm,5cm,5cm what type of triangle is",
+      " If a triangle has sides of 5cm,5cm,5cm what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -161,7 +161,7 @@ export default [
   },
   {
     question:
-      " if a triangle has angles of 60deg, 60deg, 60deg what type of triangle is",
+      " If a triangle has angles of 60deg, 60deg, 60deg what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -173,7 +173,7 @@ export default [
   },
   {
     question:
-      " if a triangle has angles of 100deg, 40deg, 40deg what type of triangle is",
+      " If a triangle has angles of 100deg, 40deg, 40deg what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -185,7 +185,7 @@ export default [
   },
   {
     question:
-      " if a triangle has angles of 20deg, 80deg, 80deg what type of triangle is",
+      " If a triangle has angles of 20deg, 80deg, 80deg what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",
@@ -197,7 +197,7 @@ export default [
   },
   {
     question:
-      " if a triangle has angles of 30deg, 70deg, 80deg what type of triangle is",
+      " If a triangle has angles of 30deg, 70deg, 80deg what type of triangle is",
     answer: [
       "isosceles triangle",
       "scalene triangle",

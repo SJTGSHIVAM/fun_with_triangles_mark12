@@ -12,7 +12,7 @@ const TriHype = () => {
     isNaN(e) || e < 0.000000000001;
 
   return (
-    <>
+    <div className="main-sec">
       <div className="bcard">
         <header className="head">
           <h1>Enter the lengths of sides of right angle triangle</h1>
@@ -20,11 +20,11 @@ const TriHype = () => {
 
         <section className="input">
           <label>
-            <span className="label">Sidele 1</span>
+            <span className="label">Side 1:</span>
             <input
               type="number"
               value={side1}
-              placeholder={"Enter Sidele 1"}
+              placeholder={"Enter Side 1"}
               onChange={(e) => {
                 setSide1(parseFloat(e.target.value));
                 setIsCalcDone(false);
@@ -32,33 +32,35 @@ const TriHype = () => {
             />
           </label>
           <label>
-            <span className="label">Sidele 2</span>
+            <span className="label">Side 2:</span>
             <input
               type="number"
               value={side2}
-              placeholder={"Enter Sidele 2"}
+              placeholder={"Enter Side 2"}
               onChange={(e) => {
                 setSide2(parseFloat(e.target.value));
                 setIsCalcDone(false);
               }}
             />
           </label>
-
-          <button
-            onClick={() => {
-              if (invalidateSidele(side1) || invalidateSidele(side2)) {
-                setValall(false);
-              } else {
-                setIsCalcDone(true);
-                setValall(true);
-                console.log(isCalcDone);
-              }
-            }}
-          >
-            Check
-          </button>
         </section>
-        <span>
+
+        <button
+          className="checkBtn"
+          onClick={() => {
+            if (invalidateSidele(side1) || invalidateSidele(side2)) {
+              setValall(false);
+            } else {
+              setIsCalcDone(true);
+              setValall(true);
+              console.log(isCalcDone);
+            }
+          }}
+        >
+          Check
+        </button>
+
+        <span className="msg">
           {valall
             ? isCalcDone &&
               "Hypotenuse is equal to " +
@@ -67,7 +69,7 @@ const TriHype = () => {
             : "Please enter values greater than 0 (only numbers are allowed in above fields)"}
         </span>
       </div>
-    </>
+    </div>
   );
 };
 export default TriHype;

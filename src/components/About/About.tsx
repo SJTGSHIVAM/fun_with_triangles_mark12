@@ -1,7 +1,7 @@
 import "./About.css";
 const About = () => {
   return (
-    <div className="bcard mid-section">
+    <div className="bcard mid-section main-sec">
       <header className="head">
         <h1>Fun with Triangles</h1>
       </header>

@@ -17,31 +17,33 @@ const data: { [key: string]: JSX.Element } = {
 export default () => {
   const [method, setMethod] = useState(methodList[0]);
   return (
-    <div className="bcard mid-cover">
-      <h2 className="fix">
-        Choose the inputs by which you want to calculate area
-      </h2>
-      <div className="method-list">
-        {methodList.map((i) => {
-          return (
-            <>
-              <span
-                className={"method-tile " + (method == i ? "highlight" : "")}
-                onClick={() => {
-                  setMethod(i);
-                }}
-                key={i}
-              >
-                {i}
-              </span>
-            </>
-          );
-        })}
-      </div>
-      {/* this is the best pices of code I wrote today cause it made me happy I dont know weather it is the way to do it or not 
+    <div className="main-sec">
+      <div className="bcard mid-cover">
+        <h1 className="fix">
+          Choose the inputs by which you want to calculate area
+        </h1>
+        <div className="method-list">
+          {methodList.map((i) => {
+            return (
+              <>
+                <span
+                  className={"method-tile " + (method == i ? "highlight" : "")}
+                  onClick={() => {
+                    setMethod(i);
+                  }}
+                  key={i}
+                >
+                  {i}
+                </span>
+              </>
+            );
+          })}
+        </div>
+        {/* this is the best pices of code I wrote today cause it made me happy I dont know weather it is the way to do it or not 
       but it was definitly worth it !
       */}
-      {(() => data[method])()}
+        {(() => data[method])()}
+      </div>
     </div>
   );
 };

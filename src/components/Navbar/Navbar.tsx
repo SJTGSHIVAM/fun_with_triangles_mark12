@@ -19,7 +19,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            TriangleFun
+            <h1>TriangleFun</h1>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
