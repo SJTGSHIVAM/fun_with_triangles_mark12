@@ -2,17 +2,13 @@
   box-sizing: border-box;
 }
 
-.head {
-  color: #406dff;
+.myHead {
   text-align: center;
-}
-.about > * {
-  display: block;
+  color: #084683;
+  background-color: #ffffff;
+  padding: 10px;
 }
 
-.about {
-  text-align: justify;
-  margin: 1rem;
-  margin-top: 0;
-  font-weight: 600;
+.mypadding {
+  padding: 15px;
 }
